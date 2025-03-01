@@ -1,0 +1,16 @@
+{
+    "name": "Reddit Image Downloader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Adds a download button to Reddit posts to save embedded images.",
+    "permissions": ["downloads"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.reddit.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}

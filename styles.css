@@ -1,0 +1,15 @@
+.reddit-image-downloader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 8px;
+  transition: color 0.2s;
+}
+
+.reddit-image-downloader:hover {
+  color: #ff4500;
+}
